@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html>
         <head>
-            <title>Home</title>
+            <title>Contact me</title>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="style.css">
             <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         </head>
         <body>
@@ -16,29 +16,30 @@
                         </label>
                         <label class="logo">My Resumes</label>
                         <ul class="header_navbar-list">
+                            <li><a class="box" href="index.html">Home</a></li>
+                            <li><a class="box" href="cv.html">My CV</a></li>
                             <li><a class="box" href="project.html">Project</a></li>
-                            <li><a class="box" href="contact.html">Contact</a></li>
+                            <li><a class="box" href="blog.html">About me</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
             <main>
-                <div style="font-family: 'Rajdhani', sans-serif; 
-                            font-weight: bold;
-                            font-size: 28px;"
-                    class="main-odd">
-                    Ha Nguyen Dang
-                </div>
-                <div class="main-even">
-                    Game Designer & Developer
-                </div>
-                <div class="main-odd">
-                    See my <a href="cv.html"> Qualification </a>
-                </div>
-                <div id="last_main" class="main-even">
-                    <a href="blog.html">Understand about me!</a>
-                </div>
-                
+                <form class="form" action="contact.html" method="post" enctype="application/x-www-form-urlencoded" target="_self" >
+                    <div>
+                        <h1 class="main_head">Contact me</h1>
+                    </div>
+                    <label for="username">Your name:</label><br>
+                    <input id="username" type="text"><br>
+                    <label for="usermail">Your e-mail:</label><br>
+                    <input id="usermail" type="text"><br>
+                    <label for="tel">Your phone number:</label><br>
+                    <input type="tel" name="tel" id="tel"><br>
+                    <label for="message">Your message:</label><br>
+                    <textarea id="message">Enter message</textarea><br>
+                    <input class="form_btn" id="reset" type="reset">
+                    <input class="form_btn" id="submit" type="submit">
+                </form>
             </main>
             <footer>
                 <div style="font-family: 'Oswald', sans-serif;" id="footer_area">

@@ -3,12 +3,18 @@
         <head>
             <title>My CV</title>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="style.css">
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         </head>
         <body>
             <header>
-                <div id="header_navbar">
+                <div class="div_header_navbar">
                     <nav class="header_navbar">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <label class="logo">My Resumes</label>
                         <ul class="header_navbar-list">
                             <li><a class="box" href="index.html">Home</a></li>
                             <li><a class="box" href="project.html">Project</a></li>
@@ -17,30 +23,67 @@
                         </ul>
                     </nav>
                 </div>
-                <div id="aside_left">
-                    <aside class="aside_left">
-                        <nav class="aside_navbar">
-                            <ul class="aside_navbar-list">
-                                <li><a href="#personal">Personal</a></li>
-                                <li><a href="#degree">Degree</a></li>
-                                <li><a href="#occupation">Occupation</a></li>
-                            </ul>
-                        </nav>
-                    </aside>
-                </div>
             </header>
             <main>
-                <h1>My CV</h1>
-                <p>The information written in this CV is not yet real info. However, it might be in the future. </p>
-                <h2 id="personal" class="main_sub-head2">Personal Detail</h2>
-                <h2 id="degree" class="main_sub-head2">Degree</h2>
-                <h2 id="occupation" class="main_sub-head2">Occupation</h2>
+                <div class="main">
+                    <div class="div_aside_left">
+                        <aside class="aside_left">
+                            <nav class="aside_navbar">
+                                <ul class="aside_navbar-list">
+                                    <li><a class="aside-box" href="#personal">Personal</a></li>
+                                    <li><a class="aside-box" href="#degree">Degree</a></li>
+                                    <li><a class="aside-box" href="#occupation">Occupation</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="main-content">
+                        <h1 class="main_head">My CV</h1>
+                        <p style="margin: 40px; font-size: 12px; font-family: 'Edu NSW ACT Foundation', cursive;"!>The information written in this CV is not yet real info.</p>
+                        <h2 id="personal" class="main_sub-head2">Personal Detail</h2>
+                        <ul style="margin: 40px;">
+                            <li>Full name: N D H</li>
+                            <li>Date of birth: 09/11/2003</li>
+                            <li>Gender: Male</li>
+                            <li>Address: Hanoi</li>
+                        </ul>
+                        <h2 id="degree" class="main_sub-head2">Degree</h2>
+                            <table class="content-table">
+                                <thead>
+                                    <tr>
+                                        <th>Qualification</th>
+                                        <th>Institution</th>
+                                        <th>Year obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bachelor</td>
+                                        <td></td>
+                                        <td>2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bachelor</td>
+                                        <td></td>
+                                        <td>2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h2 id="occupation" class="main_sub-head2">Occupation</h2>
+                            <p style="margin: 40px;">Freelancer</p>
+                    </div>
+                </div>
             </main>
             <footer>
-                <div id="footer_area">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/RMIT_University_Logo.svg/2560px-RMIT_University_Logo.svg.png" alt="RMIT logo">
-                    &copy; RMIT SSET <br>
-                    RMIT Home page: <a href="https://www.rmit.edu.vn/">rmit.edu.vn</a>
+                <div style="font-family: 'Oswald', sans-serif;" id="footer_area">
+                    <p style="padding: 10px;
+                              margin: 20px;">Tel: 035-xxx-xxxx<br>
+                    E-mail: <a href="mailto: s3924594@rmit.edu.vn">s3924594@rmit.edu.vn</a><br></p>
+                    <img style="float: right;
+                                margin: 0 30px;" id="RMIT_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/RMIT_University_Logo.svg/2560px-RMIT_University_Logo.svg.png" alt="RMIT logo"><br>
+                    <p style="margin: 20px;
+                              padding: 10px;">&copy; RMIT SSET <br>
+                    RMIT Home page: <a href="https://www.rmit.edu.vn/">rmit.edu.vn</a><br></p>
                 </div>
             </footer>
         </body>
